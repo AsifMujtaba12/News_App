@@ -72,6 +72,9 @@ window.addEventListener('scroll', () => {
         fetchNews();
     }
 })
+document.addEventListener('DOMContentLoaded', () => {
+    navDrawer.classList.remove('open'); // Ensure sidebar is hidden
+});
 
 let debounceTimer;
 

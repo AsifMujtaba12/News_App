@@ -36,10 +36,11 @@ header {
     z-index: 0;
 }
 
-.menu-btn {
+#menu-btn {
     font-size: 2rem;
     cursor: pointer;
     display: none;
+
     &:hover{
         scale: 1.1;
         transition: transform 0.3s ease-in-out;
@@ -91,10 +92,12 @@ header {
     transition: transform 0.3s ease;
     padding: 1rem;
     box-shadow: 0 4px 6px var(--card-shadow);
+    
 }
 
 .nav-drawer.open {
     transform: translateX(0);
+   
 }
 
 .drawer-header {
@@ -171,12 +174,12 @@ header {
     border-radius: 4px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .nav-bar {
         display: none;
     }
 
-    .menu-btn {
+    #menu-btn {
         display: block;
     }
 }
