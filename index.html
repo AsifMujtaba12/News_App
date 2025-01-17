@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nwes APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    
+    <div id="app">
+        <header>
+            <span class="material-symbols-outlined menu-btn"  id="menu-btn">
+                menu
+                </span>
+            <span>News App</span>
+            <nav id="nav-bar" class="nav-bar"></nav> <!-- js sai add kiya -->
+            <button id="toggle-mode" class="toggle-btn" ><span class="material-symbols-outlined" title="Toggle Dark/Light Mode">nightlight</span></button>
+        </header>
+        <nav id="nav-drawer" class="nav-drawer open">
+            <div class="drawer-header">
+                <h3>Categories</h3>
+               <span id="close-drawer-btn" class="material-symbols-outlined">
+                    close
+                    </span>
+            </div>
+            <div id="drawer-bar"></div>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search news..."/>
+        </div>
+        <main id="news-container" class="news-container"></main>
+        <div id="error" class="error hidden">Failed to load news. Please try again</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
